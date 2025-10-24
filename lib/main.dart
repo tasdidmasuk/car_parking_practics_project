@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:practics_project1/pages/auth_pages/forgetotp.dart';
+import 'package:practics_project1/pages/auth_pages/forgetpassword.dart';
 import 'package:practics_project1/pages/auth_pages/login.dart';
 import 'package:practics_project1/pages/onbording/page1.dart';
 import 'package:practics_project1/pages/onbording/page2.dart';
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Login()
+      home: Forgetotp()
     );
   }
 }

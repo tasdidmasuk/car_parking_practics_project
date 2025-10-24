@@ -13,13 +13,15 @@ class _LoginState extends State<Login> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
-        padding: EdgeInsets.all(20.0),
-        height: 800.0,
+
+        padding: EdgeInsets.only(right: 20.0, left: 20.0, top: 200.0,
+        bottom: 30.0),
+
         width: MediaQuery.of(context).size.width,
         child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
-        
+
         children: [
         Image.asset("assets/images/e5517357e0a3b2bca1823127ac4c47c949d93606.png",
         height: 100.0,
@@ -110,11 +112,14 @@ class _LoginState extends State<Login> {
               ],
             ),
           ),
+
+          //dont have account
           
-          SizedBox(height: 150.0,),
+          SizedBox(height: 200.0,),
           Container(
             child: 
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text("Don’t Have An Account?",style:
                 TextStyle(color: Colors.black,
